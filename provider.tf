@@ -6,10 +6,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "devops91-terraform"
+    bucket = "awsd-78s-remote-state"
     key    = "expense-vpc"
     region = "us-east-1"
-    dynamodb_table = "devops91-terraform-locking"
+    dynamodb_table = "awsd-78s-locking"
   }
 }
 
